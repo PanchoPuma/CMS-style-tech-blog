@@ -1,0 +1,24 @@
+{
+  "name": "cms-style-tech-blog",
+  "version": "1.0.0",
+  "description": "Cms Style tech blog",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PanchoPuma/CMS-style-tech-blog.git"
+  },
+  "author": "Francisco Puma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PanchoPuma/CMS-style-tech-blog/issues"
+  },
+  "homepage": "https://github.com/PanchoPuma/CMS-style-tech-blog#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.5"
+  }
+}
