@@ -13,7 +13,7 @@ router.get('/', withAuth, (req, res) => {
     },
     attributes: [
       'id',
-      'content',
+      'post_textarea',
       'title',
       'created_at',
     ],
@@ -24,7 +24,7 @@ router.get('/', withAuth, (req, res) => {
       },
       {
         model: Comment,
-        attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+        attributes: ['id', 'comment_textarea', 'post_id', 'user_id', 'created_at'],
         include: {
           model: User,
           attributes: ['username']
@@ -53,7 +53,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
     },
     attributes: [
       'id',
-      'content',
+      'post_textarea',
       'title',
       'created_at',
     ],
@@ -64,7 +64,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
       },
       {
         model: Comment,
-        attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+        attributes: ['id', 'comment_textarea', 'post_id', 'user_id', 'created_at'],
         include: {
           model: User,
           attributes: ['username']
