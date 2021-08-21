@@ -13,7 +13,7 @@
   --title-color: rgba(131, 128, 128, 1);
 
   --primary-color1: rgba(27, 23, 23, 1);
-  --secondary-color2: rgb(28, 133, 133,1);
+  --secondary-color2: rgb(221, 230, 230);
   --tertiary-color3: rgba(38, 78, 135, 1);
   --quaternary-color4: rgba(206, 228, 241, 1);
   --title-color5: rgba(18, 18, 18, 1);
@@ -40,7 +40,7 @@ header h1 {
   background-color: var(--secondary-color2);
   width: 40%;
   padding: 1% 2% 1% 5%;
-  text-align: right;   
+  text-align: center;   
   margin-right: 5%;
 }
 
@@ -76,6 +76,22 @@ header nav ul li a:hover {
   border-bottom: 6px solid var(--secondary-color);
   text-shadow: none;
 }
+
+header nav ul li button {
+  padding: 0px 10px 0px 10px;
+  font-weight: bold;
+  font-size: 1.75vw;
+  margin-right: 45px;
+  border-bottom: 3px solid var(--quaternary-color)
+}
+
+header nav ul li button:hover {
+  background: var(--quaternary-color4);
+  color: var(--secondary-color);
+  border-bottom: 6px solid var(--secondary-color);
+  text-shadow: none;
+}
+
 /* Header styles end*/
 /* Hero styles begin*/
 .hero {
