@@ -1,0 +1,22 @@
+<div class="card mb-6">
+    <header class="card-header card-title bg-secondary">
+
+        <div>
+            <h3>
+                <a href="/post/{{id}}" class="card-title">{{title}} </a>
+            </h3>
+        </div>
+
+    </header>
+
+    <div class="card-body">
+        <div>
+            {{post_textarea}}
+        </div>
+        <div>
+            <b>{{user.username}}</b> |
+            | {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment"
+                comments.length}}</a>
+        </div>
+
+    </div>
