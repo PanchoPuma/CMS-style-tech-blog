@@ -34,7 +34,15 @@ Post.init(
         timestamps: false,
         freezeTableName: true
 
+    },
+    {
+        created_at: {
+            type: DataTypes.DATE,
+            allowNull: false,
+            defaultValue: sequelize.fn('NOW')
+        }
     }
+
 );
 
 module.exports = Post;
