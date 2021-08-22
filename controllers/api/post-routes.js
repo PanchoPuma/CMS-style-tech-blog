@@ -11,7 +11,6 @@ router.get('/', (req, res) => {
             'id',
             'post_textarea',
             'title',
-            'created_at',
         ],
         include: [
             {
@@ -46,7 +45,6 @@ router.get('/:id', (req, res) => {
             'id',
             'post_textarea',
             'title',
-            'created_at',
         ],
         include: [
             {
