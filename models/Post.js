@@ -29,13 +29,6 @@ Post.init(
     },
 
     {
-        created_at: {
-            type: DataTypes.DATE,
-            allowNull: false,
-            defaultValue: sequelize.fn('NOW')
-        }
-    },
-    {
         sequelize,
         modelName: 'post',
         underscored: true,
