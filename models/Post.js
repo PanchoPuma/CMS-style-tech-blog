@@ -35,7 +35,6 @@ Post.init(
             defaultValue: sequelize.fn('NOW')
         }
     },
-
     {
         sequelize,
         modelName: 'post',
