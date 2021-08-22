@@ -12,7 +12,6 @@ router.get('/', (req, res) => {
       'id',
       'post_textarea',
       'title',
-      'created_at'
     ],
     include: [
       {
@@ -51,7 +50,6 @@ router.get('/post/:id', (req, res) => {
       'id',
       'post_textarea',
       'title',
-      'created_at',
     ],
     include: [
       {
@@ -109,7 +107,6 @@ router.get('/posts-comments', (req, res) => {
       'id',
       'post_textarea',
       'title',
-      'created_at'
     ],
     include: [{
       model: Comment,
