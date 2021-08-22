@@ -6,39 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Blog</title>
     <link rel="stylesheet" href="./stylesheets/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <header>
     <ul>
-    <h1>
-        Tech Blog
-    </h1>
-    <nav>
-        <h2>
-            <span>
-                <a href="/">Homepage</a>
-            </span>
-        </h2>
-        <h2>
-            <a href="/signup" > Sign Up</a>
-        </h2>
-        {{#if loggedIn}}
+        <h1>
+            Tech Blog
+        </h1>
+        <nav>
+            <h2>
+                <span>
+                    <a href="/">Homepage</a>
+                </span>
+            </h2>
+            <h2>
+                <a href="/signup"> Sign Up</a>
+            </h2>
+            {{#if loggedIn}}
 
-        <h2>
-            <a href="/dashboard">dashboard</a>
-        </h2>
-        <h2>
-            <a href="/logout" > Log out</a>
-            {{!-- <button id="logout" class="btn-no-style">logout</button> --}}
-        </h2>
-        {{else}}
-        <h2>
-            <a href="/login" > Log in</a>
-            {{!-- <button id="login" class="btn-no-style">login</button> --}}
-        </h2>
-        </ul>
-        {{/if}}
+            <h2>
+                <a href="/dashboard">dashboard</a>
+            </h2>
+            <h2>
+                <a href="/logout"> Log out</a>
+                {{!-- <button id="logout" class="btn-no-style">logout</button> --}}
+            </h2>
+            {{else}}
+            <h2>
+                <a href="/login"> Log in</a>
+                {{!-- <button id="login" class="btn-no-style">login</button> --}}
+            </h2>
+    </ul>
+    {{/if}}
     </nav>
 </header>
 
@@ -50,18 +51,20 @@
 
     </div>
 
-    <footer>
-       <h4> Made by Francisco </h4>
-    </footer>
-
-
-    {{!-- {{#if loggedIn}} --}}
-    <script src="/javascript/logout.js"></script>
-    {{!-- {{/if}} --}}
-    <script src="/javascript/login.js"></script>
-    <script src="/javascript/signup.js"></script>
-
-
 </body>
+
+<footer>
+    <h4> Made by Francisco </h4>
+</footer>
+
+
+{{!-- {{#if loggedIn}} --}}
+<script src="/javascript/logout.js"></script>
+{{!-- {{/if}} --}}
+<script src="/javascript/login.js"></script>
+<script src="/javascript/signup.js"></script>
+
+
+
 
 </html>
