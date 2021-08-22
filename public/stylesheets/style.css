@@ -19,18 +19,13 @@
   --title-color5: rgba(18, 18, 18, 1);
 }
 /* General styles end */
-/* Header styles begin*/
+/* Other styles begin*/
 header {
   padding: 20px 0px 20px 0px;
   background-color: var(--primary-color1);
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  /*just in case
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 9999;*/
 }
 
 header h1 {
@@ -92,7 +87,73 @@ header nav ul li button:hover {
   text-shadow: none;
 }
 
-/* Header styles end*/
+.title {
+  width: 30%;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary-color2);
+  color: var(--title-color5);
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 1.5vw;
+}
+
+.post {
+padding-top: 2%;
+padding-bottom: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.textarea {
+  min-width: 120%;
+  min-height: 250px;
+}
+
+
+/* Other styles end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Hero styles begin*/
 .hero {
   
@@ -109,16 +170,7 @@ header nav ul li button:hover {
 
 }
 
-.subtitle {
-  width: 30%;
-  margin-top: auto;
-  margin-left: 66.4%;
-  background-color: var(--secondary-color2);
-  color: var(--title-color5);
-  text-align: center;
-  padding: 10px 0px;
-  font-size: 1.5vw;
-}
+
 /* Hero styles end*/
 /* Main styles begin */
 main {
