@@ -27,6 +27,15 @@ Post.init(
             allowNull: true
         },
     },
+
+    {
+        created_at: {
+            type: DataTypes.DATE,
+            allowNull: false,
+            defaultValue: sequelize.fn('NOW')
+        }
+    },
+
     {
         sequelize,
         modelName: 'post',
@@ -35,13 +44,6 @@ Post.init(
         freezeTableName: true
 
     },
-    {
-        created_at: {
-            type: DataTypes.DATE,
-            allowNull: false,
-            defaultValue: sequelize.fn('NOW')
-        }
-    }
 
 );
 
