@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
             },
             {
                 model: Comment,
-                attributes: ['id', 'comment_textarea', 'post_id', 'user_id', 'created_at'],
+                attributes: ['id', 'comment_textarea', 'post_id', 'user_id'],
                 include: {
                     model: User,
                     attributes: ['username', 'password', 'email']
@@ -55,7 +55,7 @@ router.get('/:id', (req, res) => {
             },
             {
                 model: Comment,
-                attributes: ['id', 'comment_textarea', 'post_id', 'user_id', 'created_at'],
+                attributes: ['id', 'comment_textarea', 'post_id', 'user_id'],
                 include: {
                     model: User,
                     attributes: ['username', 'password', 'email']
