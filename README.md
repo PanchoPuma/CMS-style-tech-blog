@@ -7,7 +7,7 @@ This repository contains a techblog website built with mysql, node.js, handlebar
 
 ## Screenshot
 
-![ScreenShot](/assets/images/sample1.jpeg)
+![ScreenShot](/assets/img/sample1.jpeg)
 
 ## Link to deployed application
 
