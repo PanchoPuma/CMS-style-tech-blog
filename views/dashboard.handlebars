@@ -1,0 +1,15 @@
+ <h2 class="title">All posts</h2>
+{{#if posts.length}}
+    </div>
+
+    {{#each posts as |post|}}
+        {{> post-info post}}
+        
+            <a href="/dashboard/edit/{{post.id}}"><button class="button">Edit post</button></a>
+        </div>
+    {{/each}}
+
+{{else}}
+<h6 class="card-title">No posts available</h6>
+
+{{/if}}

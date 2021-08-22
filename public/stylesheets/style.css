@@ -112,6 +112,13 @@ padding-bottom: 2%;
   min-height: 250px;
 }
 
+.button {
+  padding: 0px 10px 0px 10px;
+  font-weight: bold;
+  font-size: 1.75vw;
+  margin-right: 45px;
+  border-bottom: 3px solid var(--quaternary-color)
+}
 
 /* Other styles end*/
 
